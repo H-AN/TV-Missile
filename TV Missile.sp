@@ -60,7 +60,7 @@ public void OnPluginStart()
 
     g_TVMissileConfig.TVMissileINTERVAL = CreateConVar("tv_interval", "0.02", "TV弹飞行接受指令更新间隔");
     g_TVMissileConfig.TVMissileSPEED = CreateConVar("tv_speed", "400.0", "TV弹飞行速度");
-    g_TVMissileConfig.TVMissileTURNFACTOR = CreateConVar("tv_speed", "400.0", "TV弹飞行速度");
+    g_TVMissileConfig.TVMissileTURNFACTOR = CreateConVar("tv_turnfactor", "0.2", "TV弹转向速度");
     g_TVMissileConfig.TVMissileDMG = CreateConVar("tv_damage", "100.0", "TV弹伤害");
     g_TVMissileConfig.TVMissileFlySound = CreateConVar("tv_flysound", "1", "TV弹飞行是否播放火箭音效");
     g_TVMissileConfig.TVMissileExplosionSound = CreateConVar("tv_expsound", "1", "TV弹是否播放爆炸音效");
@@ -713,3 +713,4 @@ public bool TraceRayNoPlayers(entity, mask, any data)
     }
     return true;
 }
+
